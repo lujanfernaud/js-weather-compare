@@ -19,19 +19,23 @@
           <div class="field-body">
             <div class="field">
               <div class="control">
-                <input type="text" class="input" placeholder="City 1" autofocus>
+                <input type="text" class="input" id="input-city-1"
+                  placeholder="City 1" autofocus>
               </div>
             </div>
 
             <div class="field">
               <div class="control">
-                <input type="text" class="input" placeholder="City 2">
+                <input type="text" class="input" id="input-city-2"
+                  placeholder="City 2">
               </div>
             </div>
 
             <div class="field">
               <div class="control">
-                <button class="button is-primary is-fullwidth">Compare</button>
+                <button class="button is-primary is-fullwidth" id="submit">
+                  Compare
+                </button>
               </div>
             </div>
           </div>
@@ -39,21 +43,37 @@
       </form>
     </div>
 
-    <div class="information">
+    <div class="information is-size-5">
       <div class="information-card">
-        <h2 class="information-card__heading">City</h2>
+        <h2 class="information-card__heading is-size-4" id="city-1">
+          City
+        </h2>
 
-        <p class="information-card__status">Status</p>
-        <p class="information-card__icon">Icon</p>
-        <p class="information-card__temperature">Temperature</p>
+        <p class="information-card__status" id="status-1">
+          Status
+        </p>
+        <p class="information-card__icon" id="icon-1">
+          Icon
+        </p>
+        <p class="information-card__temperature" id="temp-1">
+          Temperature
+        </p>
       </div>
 
       <div class="information-card">
-        <h2 class="information-card__heading">City</h2>
+        <h2 class="information-card__heading is-size-4" id="city-2">
+          City
+        </h2>
 
-        <p class="information-card__status">Status</p>
-        <p class="information-card__icon">Icon</p>
-        <p class="information-card__temperature">Temperature</p>
+        <p class="information-card__status" id="status-2">
+          Status
+        </p>
+        <p class="information-card__icon" id="icon-2">
+          Icon
+        </p>
+        <p class="information-card__temperature" id="temp-2">
+          Temperature
+        </p>
       </div>
     </div>
   </main>

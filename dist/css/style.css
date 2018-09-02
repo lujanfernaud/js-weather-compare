@@ -3917,10 +3917,6 @@ template {
 [hidden] {
   display: none; }
 
-.button-lg {
-  height: 3rem;
-  padding: .5rem 2rem; }
-
 html {
   font-size: 125%;
   font-family: sans;
@@ -3959,6 +3955,7 @@ body {
     flex-direction: column;
     padding: 1.5rem;
     flex-basis: 100%;
+    text-transform: capitalize;
     background-color: white;
     border-radius: 0.25rem; }
     .information-card:not(:last-child) {
