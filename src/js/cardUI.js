@@ -10,7 +10,7 @@ class CardUI {
     this.city.innerText = data.city
     this.status.innerText = data.status
     this.icon.innerText = data.icon
-    this.temp.innerText = data.temp
+    this.temp.innerText = `${Math.round(data.temp)} ℃`
   }
 }
 
