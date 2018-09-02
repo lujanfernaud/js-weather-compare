@@ -6,14 +6,18 @@
 html {
   font-size: 125%; // 20px = 20/16(browsers default font size) = 125
   font-family: sans;
+  background-color: $light;
+  height: 100%;
 }
 
 body {
   @include flex-center;
   flex-direction: column;
+  height: 100%;
 }
 
 .container {
   width: 60rem; // 1200 px
   max-width: 100%;
+  padding: 1.75rem;
 }

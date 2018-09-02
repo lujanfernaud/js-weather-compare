@@ -8,18 +8,52 @@
 </head>
 <body>
 
+  <header>
+    <h1>Weather Compare</h1>
+  </header>
+
   <main class="container">
     <div class="search">
-      Search
+      <form action="/">
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input type="text" class="input" placeholder="City 1" autofocus>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <input type="text" class="input" placeholder="City 2">
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <button class="button is-primary is-fullwidth">Compare</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
 
     <div class="information">
-      <div class="information__card">
-        Information Card
+      <div class="information-card">
+        <h2 class="information-card__heading">City</h2>
+
+        <p class="information-card__status">Status</p>
+        <p class="information-card__icon">Icon</p>
+        <p class="information-card__temperature">Temperature</p>
       </div>
 
-      <div class="information__card">
-        Information Card
+      <div class="information-card">
+        <h2 class="information-card__heading">City</h2>
+
+        <p class="information-card__status">Status</p>
+        <p class="information-card__icon">Icon</p>
+        <p class="information-card__temperature">Temperature</p>
       </div>
     </div>
   </main>
