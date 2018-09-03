@@ -1,6 +1,6 @@
 import Icon from './icon'
 
-class CardUI {
+class CityUI {
   constructor(id) {
     this.city = document.getElementById(`city-${id}`)
     this.status = document.getElementById(`status-${id}`)
@@ -16,4 +16,4 @@ class CardUI {
   }
 }
 
-export default CardUI
+export default CityUI

@@ -1,15 +1,15 @@
 import Form from './form'
 import WeatherAPI from './weatherAPI'
-import CardsController from './cardsController'
-import CardUI from './cardUI'
+import CitiesController from './citiesController'
+import CityUI from './cityUI'
 
 class App {
   constructor() {
     this.form = new Form(this)
     this.weatherAPI = new WeatherAPI()
-    this.cardsController = new CardsController(this)
-    this.city1 = new CardUI(1)
-    this.city2 = new CardUI(2)
+    this.citiesController = new CitiesController(this)
+    this.city1UI = new CityUI(1)
+    this.city2UI = new CityUI(2)
   }
 
   start() {
@@ -20,8 +20,8 @@ class App {
   // private
 
   _setSampleData() {
-    this.cardsController.updateCard(1, 'Santa Cruz de Tenerife')
-    this.cardsController.updateCard(2, 'London')
+    this.citiesController.updateCity(1, 'Santa Cruz de Tenerife')
+    this.citiesController.updateCity(2, 'London')
   }
 }
 

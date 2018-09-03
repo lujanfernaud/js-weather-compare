@@ -10,18 +10,18 @@ class Form {
     this.submitButton.addEventListener('click', event => {
       event.preventDefault()
 
-      this._updateCityCards()
+      this._updateCities()
     })
   }
 
   // private
 
-  _updateCityCards() {
+  _updateCities() {
     const city1 = this.inputCity1.value
     const city2 = this.inputCity2.value
 
-    this.app.cardsController.updateCard(1, city1)
-    this.app.cardsController.updateCard(2, city2)
+    this.app.citiesController.updateCity(1, city1)
+    this.app.citiesController.updateCity(2, city2)
   }
 }
 
