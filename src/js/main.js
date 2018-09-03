@@ -16,14 +16,6 @@ class App {
 
   start() {
     this.form.watch()
-    this._setSampleData()
-  }
-
-  // private
-
-  _setSampleData() {
-    this.citiesController.updateCity(1, 'Santa Cruz de Tenerife')
-    this.citiesController.updateCity(2, 'London')
   }
 }
 
