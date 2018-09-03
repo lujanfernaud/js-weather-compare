@@ -1,3 +1,5 @@
+import Icon from './icon'
+
 class CardUI {
   constructor(id) {
     this.city = document.getElementById(`city-${id}`)
@@ -9,7 +11,7 @@ class CardUI {
   render(data) {
     this.city.innerText = data.city
     this.status.innerText = data.status
-    this.icon.innerText = data.icon
+    this.icon.src = new Icon(data).src()
     this.temp.innerText = `${Math.round(data.temp)} ℃`
   }
 }
