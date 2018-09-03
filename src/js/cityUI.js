@@ -9,7 +9,7 @@ class CityUI {
   }
 
   render(data) {
-    this.city.innerText = data.city
+    this.city.innerText = data.name
     this.status.innerText = data.status
     this.icon.src = new Icon(data).src()
     this.temp.innerText = `${Math.round(data.temp)} ℃`

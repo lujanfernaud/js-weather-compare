@@ -5,19 +5,15 @@ class CitiesController {
 
   async updateCity(id, city) {
     const cityUI = this._selectCityUI(id)
-    const data = await this._getDataFor(city)
+    const cityData = await this.app.cityModel.findOrCreate(city)
 
-    return cityUI.render(data)
+    return cityUI.render(cityData)
   }
 
   // private
 
   _selectCityUI(id) {
     return id === 1 ? this.app.city1UI : this.app.city2UI
-  }
-
-  _getDataFor(city) {
-    return this.app.weatherAPI.getData(city)
   }
 }
 
