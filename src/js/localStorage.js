@@ -1,4 +1,4 @@
-const ONE_HOUR = 60 * 60 * 1000
+import { oneHour } from './constants'
 
 class LocalStorage {
   constructor() {
@@ -6,7 +6,7 @@ class LocalStorage {
   }
 
   hasUpdatedCity(cityName) {
-    const anHourAgo = Date.now() - ONE_HOUR
+    const anHourAgo = Date.now() - oneHour
     const city = this.cities.filter(city => city.name === cityName)
 
     if (city[0] === undefined) { return false }

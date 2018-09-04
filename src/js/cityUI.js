@@ -1,11 +1,11 @@
 import Icon from './icon'
+import { cityNotFound } from './constants'
 
 class CityUI {
   constructor(id) {
     this.loaderContainer = document.getElementById(`loader-${id}`)
     this.loaderCity = document.getElementById(`loader-city-${id}`)
     this.loaderStatus = document.getElementById(`loader-status-${id}`)
-    this.loaderIcon = document.getElementById(`loader-icon-${id}`)
     this.loaderTemp = document.getElementById(`loader-temp-${id}`)
 
     this.dataContainer = document.getElementById(`data-${id}`)
@@ -30,8 +30,15 @@ class CityUI {
 
     this.dataCity.innerText = data.name
     this.dataStatus.innerText = data.status
-    this.dataIcon.src = new Icon(data).src()
-    this.dataTemp.innerText = `${Math.round(data.temp)} ℃`
+
+    if (data.status !== cityNotFound.status) {
+      this.dataIcon.src = new Icon(data).src()
+      this.dataTemp.innerText = `${Math.round(data.temp)} ℃`
+    } else {
+      this.dataIcon.src = ''
+      this.dataIcon.src = 'dist/svg/wi-thermometer-exterior.svg'
+      this.dataTemp.innerText = ''
+    }
   }
 }
 

@@ -45,14 +45,14 @@
       @include flex-center;
       flex-direction: column;
       opacity: 0;
-      transition: all .25s;
+      transition: all .25s ease-in-out;
     }
 
     &__data {
       @include flex-center;
       flex-direction: column;
       opacity: 0;
-      transition: all .25s;
+      transition: all .25s ease-out;
     }
 
     &:not(:last-child) {

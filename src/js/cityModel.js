@@ -1,4 +1,5 @@
 import LocalStorage from './localStorage'
+import { cityNotFound } from './constants'
 
 class CityModel {
   constructor(app) {
@@ -17,7 +18,7 @@ class CityModel {
     } else {
       console.log('Fetching city:', city)
 
-      cityData = await this._fetchDataFor(city)
+      cityData = await this._fetchDataFor(city).catch(() => cityNotFound)
 
       localStorage.create(cityData)
     }
