@@ -7,7 +7,7 @@ class LocalStorage {
 
   hasUpdatedCity(cityName) {
     const anHourAgo = Date.now() - oneHour
-    const city = this.cities.filter(city => city.name === cityName)
+    const city = this.cities.filter(city => city.name.includes(cityName))
 
     if (city[0] === undefined) { return false }
 
@@ -15,12 +15,14 @@ class LocalStorage {
   }
 
   find(cityName) {
-    return this.cities.filter(city => city.name === cityName)[0]
+    return this.cities.filter(city => city.name.includes(cityName))[0]
   }
 
   create(cityData) {
     const cities = [...this.cities]
-    const filteredCities = cities.filter(city => city.name !== cityData.name)
+    const filteredCities = cities.filter(city =>
+      !city.name.includes(cityData.name)
+    )
 
     cityData.createdAt = Date.now()
 

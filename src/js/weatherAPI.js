@@ -11,7 +11,7 @@ class WeatherAPI {
     const json = await response.json()
 
     return {
-      name: json.data[0].city_name,
+      name: `${json.data[0].city_name}, ${json.data[0].country_code}`,
       status: json.data[0].weather.description,
       iconCode: json.data[0].weather.code,
       temp: json.data[0].temp

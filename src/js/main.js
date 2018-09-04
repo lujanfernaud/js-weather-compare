@@ -22,10 +22,10 @@ class App {
   // private
 
   _setSampleData() {
-    this.form.inputCity1.placeholder = 'Santa Cruz de Tenerife'
-    this.form.inputCity2.placeholder = 'London'
-    this.citiesController.updateCity(1, 'Santa Cruz de Tenerife')
-    this.citiesController.updateCity(2, 'London')
+    this.form.inputCity1.placeholder = 'Santa Cruz de Tenerife, ES'
+    this.form.inputCity2.placeholder = 'London, GB'
+    this.citiesController.updateCity(1, 'Santa Cruz de Tenerife, ES')
+    this.citiesController.updateCity(2, 'London, GB')
   }
 }
 
