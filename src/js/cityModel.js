@@ -12,12 +12,8 @@ class CityModel {
     let cityData
 
     if (localStorage.hasUpdatedCity(city)) {
-      console.log('Getting city from Local Storage:', city)
-
       cityData = localStorage.find(city)
     } else {
-      console.log('Fetching city:', city)
-
       cityData = await this._fetchDataFor(city).catch(() => cityNotFound)
 
       localStorage.create(cityData)

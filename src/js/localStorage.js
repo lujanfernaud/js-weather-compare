@@ -11,8 +11,6 @@ class LocalStorage {
 
     if (city[0] === undefined) { return false }
 
-    console.log('Has updated city:', city[0].name, city[0].createdAt > anHourAgo)
-
     return city[0].createdAt > anHourAgo
   }
 
