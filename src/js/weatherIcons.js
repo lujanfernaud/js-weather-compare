@@ -216,7 +216,7 @@ const weatherIcons = {
 
   '721': {
     'label': 'haze',
-    'icon': 'day-haze'
+    'icon': 'haze'
   },
 
   '731': {
@@ -246,7 +246,7 @@ const weatherIcons = {
 
   '771': {
     'label': 'squalls',
-    'icon': 'day-windy'
+    'icon': 'windy'
   },
 
   '781': {
