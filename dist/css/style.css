@@ -3931,12 +3931,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100%; }
+  min-height: 100%;
+  padding: 1.25rem 0; }
 
 .section {
   position: relative;
   top: -3.4%;
-  padding: 1.75rem; }
+  padding: 0 1.75rem 1.75rem 1.75rem; }
   @media screen and (min-width: 1300px) {
     .section {
       width: 60rem; } }
@@ -3945,7 +3946,7 @@ body {
   max-width: 100%; }
 
 .main-heading {
-  margin-top: -.35rem; }
+  margin-top: 0; }
   @media screen and (max-width: 768px) {
     .main-heading {
       text-align: center; } }
