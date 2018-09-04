@@ -1,12 +1,13 @@
 class WeatherAPI {
   constructor() {
+    this.apiURL = 'https://api.weatherbit.io/v2.0/current'
     this.appID = '7e32e5caf8ee4462ae40a78352552372'
   }
 
   async fetchData(city) {
-    const apiURL = `https://api.weatherbit.io/v2.0/current?city=${city}&key=${this.appID}`
+    const apiFullURL = `${this.apiURL}?city=${city}&key=${this.appID}`
 
-    const response = await fetch(apiURL, { mode: 'cors' })
+    const response = await fetch(apiFullURL, { mode: 'cors' })
     const json = await response.json()
 
     return {
