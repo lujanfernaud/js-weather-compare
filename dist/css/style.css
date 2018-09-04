@@ -3931,12 +3931,24 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100%; }
+  min-height: 100%; }
 
-.container {
-  width: 60rem;
-  max-width: 100%;
+.section {
+  position: relative;
+  top: -3.4%;
   padding: 1.75rem; }
+  @media screen and (min-width: 1300px) {
+    .section {
+      width: 60rem; } }
+
+.main {
+  max-width: 100%; }
+
+.main-heading {
+  margin-top: -.35rem; }
+  @media screen and (max-width: 768px) {
+    .main-heading {
+      text-align: center; } }
 
 .search {
   margin-bottom: 1.75rem;
@@ -3985,7 +3997,8 @@ body {
       margin-bottom: 1.75rem; }
     .information-card__heading {
       margin-bottom: 1rem;
-      height: 2.25rem; }
+      min-height: 2.25rem;
+      text-align: center; }
     .information-card__icon {
       width: 5rem;
       height: 5rem;

@@ -3,6 +3,36 @@
 //
 
 
+// Main Containers
+
+
+.section {
+  position: relative;
+  top: -3.4%;
+  padding: 1.75rem;
+
+  @media screen and (min-width: 1300px) {
+    width: 60rem; // 1200 px
+  }
+}
+
+.main {
+  max-width: 100%;
+}
+
+
+// Main Heading
+
+
+.main-heading {
+  margin-top: -.35rem;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+
 // Search
 
 
@@ -61,7 +91,8 @@
 
     &__heading {
       margin-bottom: 1rem;
-      height: 2.25rem;
+      min-height: 2.25rem;
+      text-align: center;
     }
 
     &__icon {

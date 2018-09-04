@@ -13,11 +13,5 @@ html {
 body {
   @include flex-center;
   flex-direction: column;
-  height: 100%;
-}
-
-.container {
-  width: 60rem; // 1200 px
-  max-width: 100%;
-  padding: 1.75rem;
+  min-height: 100%;
 }
