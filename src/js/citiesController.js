@@ -5,6 +5,9 @@ class CitiesController {
 
   async updateCity(id, city) {
     const cityUI = this._selectCityUI(id)
+
+    cityUI.renderLoader()
+
     const cityData = await this.app.cityModel.findOrCreate(city)
 
     return cityUI.render(cityData)
