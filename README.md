@@ -6,6 +6,7 @@ A simple app to compare the weather of two cities.
 
 - [Weatherbit API](https://www.weatherbit.io/api)
 - [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage)
+- [Weather Icons](https://github.com/erikflowers/weather-icons)
 - [Bulma](https://bulma.io/)
 
 ## Screenshot
