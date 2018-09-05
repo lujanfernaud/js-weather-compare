@@ -18,12 +18,6 @@ class Form {
     const fields = [this.inputCity1, this.inputCity2]
 
     fields.forEach(field => {
-      field.addEventListener('click', () => {
-        if (field.value.length !== 0) {
-          field.setSelectionRange(0, field.value.length)
-        }
-      })
-
       field.addEventListener('input', () => {
         this._changeFieldState(field)
       })
