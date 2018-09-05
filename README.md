@@ -1,9 +1,10 @@
 # JS Weather Compare
 
-A simple app to compare the weather of two cities.
+A simple web app to compare the weather of two cities.
 
 ## Built With
 
+- ES6+
 - [Weatherbit API](https://www.weatherbit.io/api)
 - [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage)
 - [Weather Icons](https://github.com/erikflowers/weather-icons)
