@@ -1,6 +1,10 @@
 # JS Weather Compare
 
-A simple web app to compare the weather of two cities.
+A simple ES6+ web app to compare the current weather of two cities.
+
+## Demo
+
+[lujanfernaud.com/js-weather-compare](http://lujanfernaud.com/js-weather-compare/)
 
 ## Built With
 
